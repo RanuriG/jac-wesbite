@@ -44,7 +44,7 @@ Prism.languages.jac = {
   },
 
   // Operators
-  'operator': /[<>]=?|[!=]=?=?|--?|\+\+?|&&?|\|\|?|[*\/%^~]|<<|>>|:=|\?|@|and|or|not|in|is/,
+  'operator': /[<>]=?|[!=]=?=?|--?|\+\+?|&&?|\|\|?|[*\/%^~]|<<|>>|:=|\?|@|and|not|in|is/,
 
   // Punctuation
   'punctuation': /[{}[\];(),.:]/
