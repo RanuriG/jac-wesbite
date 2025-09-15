@@ -3,12 +3,12 @@ import Prism from 'prismjs';
 Prism.languages.jac = {
     'comment': [
         {
-            pattern: /(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/,
+            pattern: /(^|[^#])\/\*[\s\S]*?(?:\*\/|$)/,
             lookbehind: true,
             greedy: true
         },
         {
-            pattern: /(^|[^\\:])\/\/.*/,
+            pattern: /(^|[^#:])\/\/.*/,
             lookbehind: true,
             greedy: true
         }
@@ -21,7 +21,7 @@ Prism.languages.jac = {
         pattern: /(\b(?:walker|node|edge|type|ability|can)\s+)\w+/i,
         lookbehind: true
     },
-    'keyword': /\b(?:walker|node|edge|graph|spawn|with|entry|exit|disengage|take|ignore|visit|revisit|type|has|can|report|by|anchor|private|public|import|include|for|while|if|else|elif|skip|strict|hybrid|async|sync|test|assert|global|yield)\b/,
+    'keyword': /\b(?:walker|node|edge|graph|spawn|with|entry|exit|disengage|take|ignore|visit|revisit|type|has|can|report|by|anchor|private|public|import|include|for|while|if|else|elif|skip|strict|hybrid|async|sync|test|assert|global|yield|def|return)\b/,
     'builtin': /\b(?:int|str|list|dict|bool|float|object|edge|node|walker|true|false|null|uuid|context|info|details|bool|dict|list|int|str|edge|node|walker)\b/,
     'boolean': /\b(?:true|false)\b/,
     'function': /\b\w+(?=\()/,
