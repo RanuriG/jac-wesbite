@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { Highlight} from "prism-react-renderer";
 import "../../../lib/prism-jac";
 import { CodeBlock } from "../CodeBlock";
 
